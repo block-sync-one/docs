@@ -38,9 +38,7 @@
             "group": "Security",
             "pages": [
               "overview/sunSOL",
-              "overview/open-source",
-              "overview/images",
-              "overview/reusable-snippets"
+              "overview/open-source"
             ]
           },
           {
