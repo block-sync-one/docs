@@ -17,7 +17,9 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "jump-to-crpyto"
+              "jump-to-crpyto",
+              "core-features",
+              "jump-into-crypto"
             ]
           },
           {
