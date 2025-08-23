@@ -37,11 +37,9 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "legal",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "legal/terms-and-conditions"
             ]
           }
         ]
