@@ -11,12 +11,13 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index"
+              "index",
+              "jump-to-crpyto"
             ]
           },
           {
