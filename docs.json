@@ -22,19 +22,20 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Hubra overview",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "overview/earn",
+              "overview/stash",
+              "overview/portfolio"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Security",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "overview/sunSOL",
+              "overview/open-source",
+              "overview/images",
+              "overview/reusable-snippets"
             ]
           },
           {
