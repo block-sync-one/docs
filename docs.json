@@ -38,13 +38,6 @@
             ]
           },
           {
-            "group": "Security",
-            "pages": [
-              "overview/sunSOL",
-              "overview/open-source"
-            ]
-          },
-          {
             "group": "Legal",
             "pages": [
               "legal/terms-and-conditions"
