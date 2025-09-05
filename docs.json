@@ -32,6 +32,7 @@
           {
             "group": "Hubra overview",
             "pages": [
+              "overview/trends",
               "overview/earn",
               "overview/stash",
               "overview/portfolio"
