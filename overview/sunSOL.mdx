@@ -5,12 +5,12 @@ description: "Understand how liquid staking works on Solana, why sunSOL matters,
 
 # 🌞 Liquid Staking and sunSOL
 
-Staking is the backbone of Solana. By staking SOL, you help secure the network and earn rewards.\
+Staking is the backbone of Solana. By staking SOL, you help secure the network and earn rewards.  
 But in traditional staking, tokens are locked and can’t be used anywhere else. That’s where **Liquid Staking Tokens (LSTs)** come in.
 
 <Info>
-  **LSTs = Staked SOL \+ Liquidity**\
-  They represent your staked position while remaining usable across DeFi.
+**LSTs = Staked SOL + Accumulated Rewards**  
+They represent your staking position, growing in value over time as rewards accrue.
 </Info>
 
 ---
@@ -19,54 +19,56 @@ But in traditional staking, tokens are locked and can’t be used anywhere else.
 
 sunSOL is the native LST of Hubra - designed to be both a **yield engine** and a **power source** for the app.
 
-- **Stake SOL, Stay liquid** → staked SOL, but instantly usable across Hubra and Solana DeFi.
-- **Boosted opportunities** → sunSOL holders unlock extra multipliers in Earn
-- **Stake boost** → In addition to validator rewards, sunSOL accrues value from a share of Hubra platform fees.
+- **Stake SOL, Stay Liquid** → Earn validator rewards while keeping your tokens usable.  
+- **Boosted Opportunities** → Unlock extra multipliers in Earn and Loyalty League.  
+- **Stake Boost** → A share of Hubra platform fees is distributed back into sunSOL, making it the first LST that accrues value beyond validator yield.  
 
 <Tip>
-  sunSOL isn’t just a staking token. It is the **fuel** that powers everything inside Hubra.
+sunSOL isn’t just a staking token. It is the **fuel** that powers everything inside Hubra.
 </Tip>
 
+---
 
+## ⚙️ How It Works
 
+1. **Deposit SOL** → Stake SOL through the Solana stake pool program.  
+2. **Receive sunSOL** → The pool mints sunSOL into your wallet.  
+3. **Accrue Value** → sunSOL increases in value as:  
+   - Validators generate staking rewards.  
+   - Hubra shares platform fees back into the pool.  
+4. **Stay Flexible** → Trade, lend, LP, or hold sunSOL across DeFi.  
+5. **Redeem Anytime** → Swap sunSOL back into SOL when you want to exit.  
 
-## ⚙️ How It Works in Hubra
-
-1. **Deposit SOL** → You send SOL into the stake pool.
-2. **Receive sunSOL** → The pool mints sunSOL into your wallet.
-3. **Keep Earning** → Rewards accumulate automatically as validators produce blocks.
-4. **Earn More** → A share of Hubra platform fees is distributed into sunSOL, growing its value.
-5. **Use Everywhere** → Trade, lend, LP, or hold sunSOL across DeFi.
-6. **Redeem Anytime** → Swap sunSOL back into SOL when you want to exit.
-
-<Success>
-  By holding sunSOL, you’re both **staking securely** and **capturing platform revenue** — without ever compromising self-custody.
-</Success>
+<Note>
+By holding sunSOL, you’re both **staking securely** and **capturing platform revenue** - without ever compromising self-custody.
+</Note>
 
 ---
 
-## 🌐 About Stake Pools
+## 💰 Why LSTs Trade Above SOL
 
-A **stake pool** is a program on Solana that lets many users delegate SOL together.\
-The pool mints tokens (like sunSOL) that represent your share of the pooled stake.
+Unlike SOL, which is a static token, LSTs like sunSOL **accumulate rewards directly into their value**:
 
-- Stake pools continuously earn validator rewards.
-- As rewards accrue, each sunSOL becomes worth **more SOL** over time.
-- You can swap back sunSOL → SOL whenever you want.
+- Each sunSOL represents **1 SOL + staking rewards** earned since it was minted.  
+- Over time, the **exchange rate increases** (e.g., 1 sunSOL = 1.03 SOL).  
+- When you redeem sunSOL, you always get back **more SOL than you originally deposited**, depending on accrued rewards.  
+
+<Note>
+This is why LSTs often appear **“more expensive”** than SOL on price charts.  
+They don’t inflate - they **grow** as rewards compound.
+</Note>
 
 ---
 
-## 🛡️ Security and Safety
+## 🛡️ Security and Audits
 
-Security is baked into every layer:
+sunSOL is powered by the **Solana Stake Pool Program**, one of the most tested programs in the ecosystem:
 
-- **Native stake pools** → sunSOL is minted directly by delegating SOL into Solana stake pools.
-- **Audited program** → The Solana Stake Pool Program has undergone **multiple third-party audits**, including reviews by [Halborn](https://github.com/anza-xyz/security-audits/blob/master/spl/HalbornStakePoolAudit-2023-12-31.pdf) and [Neodyme](https://github.com/anza-xyz/security-audits/blob/master/spl/NeodymeStakePoolAudit-2023-11-14.pdf), and is battle-tested across millions of SOL staked by other protocols.
-- **Non-custodial** → You never give up control. sunSOL is held in your wallet like any SPL token.
-- **Transparent mechanics** → Every mint and redeem is visible on-chain.
+- **Audited multiple times** by [Quantstamp](https://github.com/anza-xyz/security-audits/blob/master/spl/QuantstampStakePoolAudit-2021-10-22.pdf), [Kudelski](https://github.com/anza-xyz/security-audits/blob/master/spl/KudelskiStakePoolAudit-2021-07-07.pdf), [Neodyme](https://github.com/anza-xyz/security-audits/blob/master/spl/NeodymeStakePoolAudit-2023-11-14.pdf), [OtterSec](https://github.com/anza-xyz/security-audits/blob/master/spl/OtterSecStakePoolAudit-2023-01-20.pdf), and [Halborn](https://github.com/anza-xyz/security-audits/blob/master/spl/HalbornStakePoolAudit-2023-12-31.pdf).  
+- **Battle-tested** across millions of SOL staked by other LST protocols.  
+- **Non-custodial** → You hold sunSOL directly in your wallet.  
+- **Transparent** → Every mint and redeem is visible on-chain.  
 
 <Warning>
-  Unlike custodial “wrapped staking” solutions, sunSOL never leaves the Solana staking framework.
+Unlike custodial “wrapped staking” solutions, sunSOL never leaves the Solana staking framework.
 </Warning>
-
----
