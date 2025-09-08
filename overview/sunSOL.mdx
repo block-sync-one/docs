@@ -1,35 +1,71 @@
 ---
-title: 'Code blocks'
-description: 'Display inline code and code blocks'
-icon: 'code'
+title: "Liquid Staking and sunSOL"
+description: "Understand how liquid staking works on Solana, why sunSOL matters, and how Hubra makes it safe."
 ---
 
-## Inline code
+# 🌞 Liquid Staking and sunSOL
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+Staking is the backbone of Solana. By staking SOL, you help secure the network and earn rewards.\
+But in traditional staking, tokens are locked and can’t be used anywhere else. That’s where **Liquid Staking Tokens (LSTs)** come in.
 
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
+<Info>
+  **LSTs = Staked SOL \+ Liquidity**\
+  They represent your staked position while remaining usable across DeFi.
+</Info>
 
-## Code blocks
+---
 
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+## 🔑 What Makes sunSOL Unique
 
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+sunSOL is the native LST of Hubra - designed to be both a **yield engine** and a **power source** for the app.
 
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-````
+- **Stake SOL, Stay liquid** → staked SOL, but instantly usable across Hubra and Solana DeFi.
+- **Boosted opportunities** → sunSOL holders unlock extra multipliers in Earn
+- **Stake boost** → In addition to validator rewards, sunSOL accrues value from a share of Hubra platform fees.
+
+<Tip>
+  sunSOL isn’t just a staking token. It is the **fuel** that powers everything inside Hubra.
+</Tip>
+
+---
+
+## 🛡️ Security and Safety
+
+Security is baked into every layer:
+
+- **Native stake pools** → sunSOL is minted directly by delegating SOL into Solana stake pools.
+- **Audited program** → The Solana Stake Pool Program has undergone **multiple third-party audits**, including reviews by [Halborn](https://github.com/anza-xyz/security-audits/blob/master/spl/HalbornStakePoolAudit-2023-12-31.pdf) and [Neodyme](https://github.com/anza-xyz/security-audits/blob/master/spl/NeodymeStakePoolAudit-2023-11-14.pdf), and is battle-tested across millions of SOL staked by other protocols.
+- **Non-custodial** → You never give up control. sunSOL is held in your wallet like any SPL token.
+- **Transparent mechanics** → Every mint and redeem is visible on-chain.
+
+<Warning>
+  Unlike custodial “wrapped staking” solutions, sunSOL never leaves the Solana staking framework.
+</Warning>
+
+---
+
+## 🌐 About Stake Pools
+
+A **stake pool** is a program on Solana that lets many users delegate SOL together.\
+The pool mints tokens (like sunSOL) that represent your share of the pooled stake.
+
+- Stake pools continuously earn validator rewards.
+- As rewards accrue, each sunSOL becomes worth **more SOL** over time.
+- You can swap back sunSOL → SOL whenever you want.
+
+---
+
+## ⚙️ How It Works in Hubra
+
+1. **Deposit SOL** → You send SOL into the stake pool.
+2. **Receive sunSOL** → The pool mints sunSOL into your wallet.
+3. **Keep Earning** → Rewards accumulate automatically as validators produce blocks.
+4. **Earn More** → A share of Hubra platform fees is distributed into sunSOL, growing its value.
+5. **Use Everywhere** → Trade, lend, LP, or hold sunSOL across DeFi.
+6. **Redeem Anytime** → Swap sunSOL back into SOL when you want to exit.
+
+<Success>
+  By holding sunSOL, you’re both **staking securely** and **capturing platform revenue** — without ever compromising self-custody.
+</Success>
+
+- **Audited program** → The Solana Stake Pool Program has undergone **multiple third-party audits**, including reviews by [Kudelski Security](https://research.kudelskisecurity.com/) and [Neodyme](https://neodyme.io/), and is battle-tested across millions of SOL staked by other protocols.
