@@ -30,6 +30,13 @@
             ]
           },
           {
+            "group": "Developers",
+            "pages": [
+              "developers/github",
+              "developers/raSOL"
+            ]
+          },
+          {
             "group": "Legal",
             "pages": [
               "legal/terms-and-conditions"
