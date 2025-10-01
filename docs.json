@@ -25,15 +25,15 @@
             "pages": [
               "overview/trends",
               "overview/earn",
-              "overview/portfolio",
-              "overview/sunSOL"
+              "overview/portfolio"
             ]
           },
           {
-            "group": "Developers",
+            "group": "General",
             "pages": [
-              "developers/github",
-              "developers/raSOL"
+              "general/github",
+              "general/raSOL",
+              "press-kit"
             ]
           },
           {
