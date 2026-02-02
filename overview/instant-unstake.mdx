@@ -16,17 +16,21 @@ Hubra lets you unstake your SOL instantly - no waiting for the standard 2-3 day 
 5. SOL arrives in your wallet within seconds
 
 <Info>
-Hubra covers all network fees. You only pay the Sanctum liquidity fee.
+Hubra covers all network fees - unstaking is gasless for you.
 </Info>
 
 ## Fees
 
-| Fee | Amount | Who pays |
-|-----|--------|----------|
-| Sanctum fee | 0.1-0.5% | You |
-| Network fee | ~0.000005 SOL | Hubra (gasless) |
+| Fee | Amount | Notes |
+|-----|--------|-------|
+| Hubra fee | 0.2% | Platform fee |
+| Sanctum fee | 0.1-0.5% | Liquidity fee (varies by availability) |
+| Network fee | Covered | Hubra pays (gasless) |
+| Account rent | ~0.002 SOL | Only for partial unstake |
 
-The exact Sanctum fee depends on available liquidity. You'll see the fee before confirming.
+<Tip>
+You'll see the exact output amount before confirming - no hidden fees.
+</Tip>
 
 <Warning>
 If price impact exceeds 5%, you'll see a warning. Consider unstaking in smaller amounts.
@@ -45,25 +49,19 @@ Unstake any amount - you don't have to unstake everything at once.
 3. The unstaked portion converts to SOL instantly
 4. The rest keeps earning staking rewards
 
-### Additional fees for partial unstake
-
-| Fee | Amount | Notes |
-|-----|--------|-------|
-| Account rent | ~0.002 SOL | One-time fee for creating split account |
-
 <Info>
 Minimum unstake amount: 0.01 SOL
 </Info>
 
 ## Why instant unstake?
 
-Traditional Solana unstaking requires a 2-3 day cooldown period. Hubra's instant unstake uses Sanctum's liquidity pools to give you SOL immediately. The small fee (0.1-0.5%) is the cost for instant liquidity.
+Traditional Solana unstaking requires a 2-3 day cooldown period. Hubra's instant unstake uses Sanctum's liquidity pools to give you SOL immediately.
 
 ## FAQ
 
 <AccordionGroup>
-  <Accordion title="Why is there a fee?">
-    Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. This convenience comes with a small fee (0.1-0.5%) that goes to liquidity providers.
+  <Accordion title="Why are there fees?">
+    Two fees apply: Hubra's platform fee (0.2%) and Sanctum's liquidity fee (0.1-0.5%). Sanctum provides the instant liquidity by swapping your stake for SOL from their pools.
   </Accordion>
   
   <Accordion title="Is there a minimum unstake amount?">
