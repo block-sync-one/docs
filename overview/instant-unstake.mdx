@@ -38,7 +38,7 @@ Hubra covers all network fees - you pay zero gas.
 | Fee | Amount | Description |
 |-----|--------|-------------|
 | Sanctum fee | 0.1-0.5% | Liquidity provider fee (varies by pool liquidity) |
-| Hubra fee | Shown before confirm | Platform fee |
+| Hubra fee | 0.20% | Platform fee (20 bps) |
 | Network fee | ~0.000005 SOL | Covered by Hubra (gasless) |
 
 The exact fees are displayed before you confirm. Sanctum fee depends on available liquidity - larger unstakes may have higher price impact.
@@ -74,7 +74,7 @@ Minimum unstake amount: 0.01 SOL
 
 <AccordionGroup>
   <Accordion title="Why is the output less than my staked amount?">
-    Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. This convenience has fees: Sanctum liquidity fee (0.1-0.5%) plus Hubra platform fee. You'll see the exact amounts before confirming.
+    Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. Fees include: Sanctum liquidity fee (0.1-0.5%) plus Hubra platform fee (0.20%). You'll see the exact amounts before confirming.
   </Accordion>
   
   <Accordion title="Is there a minimum unstake amount?">
