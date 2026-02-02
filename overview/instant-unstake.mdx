@@ -30,17 +30,18 @@ Convert your staked SOL to liquid SOL immediately. Powered by [Sanctum](https://
 5. SOL arrives in your wallet within seconds
 
 <Info>
-Hubra covers all network fees. You only pay the Sanctum liquidity fee.
+Hubra covers all network fees - you pay zero gas.
 </Info>
 
-### Fees
+## Fees
 
-| Fee | Amount | Who pays |
-|-----|--------|----------|
-| Sanctum fee | 0.1-0.5% | You |
-| Network fee | ~0.000005 SOL | Hubra (gasless) |
+| Fee | Amount | Description |
+|-----|--------|-------------|
+| Sanctum fee | 0.1-0.5% | Liquidity provider fee (varies by pool liquidity) |
+| Hubra fee | Shown before confirm | Platform fee |
+| Network fee | ~0.000005 SOL | Covered by Hubra (gasless) |
 
-The exact Sanctum fee depends on available liquidity. You'll see the fee before confirming.
+The exact fees are displayed before you confirm. Sanctum fee depends on available liquidity - larger unstakes may have higher price impact.
 
 <Warning>
 If price impact exceeds 5%, you'll see a warning. Consider unstaking in smaller portions for large amounts.
@@ -59,13 +60,11 @@ Unstake any amount - you don't have to unstake everything at once.
 3. The unstaked portion converts to SOL instantly
 4. The remaining stake keeps earning rewards
 
-### Fees
+### Additional fees for partial unstake
 
 | Fee | Amount | Notes |
 |-----|--------|-------|
 | Account rent | ~0.002 SOL | One-time fee for creating split account |
-| Sanctum fee | 0.1-0.5% | Liquidity fee |
-| Network fees | Covered | Hubra pays (gasless) |
 
 <Info>
 Minimum unstake amount: 0.01 SOL
@@ -74,8 +73,8 @@ Minimum unstake amount: 0.01 SOL
 ## FAQ
 
 <AccordionGroup>
-  <Accordion title="Why is the output slightly less than my staked amount?">
-    Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. This convenience comes with a small fee (0.1-0.5%).
+  <Accordion title="Why is the output less than my staked amount?">
+    Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. This convenience has fees: Sanctum liquidity fee (0.1-0.5%) plus Hubra platform fee. You'll see the exact amounts before confirming.
   </Accordion>
   
   <Accordion title="Is there a minimum unstake amount?">
