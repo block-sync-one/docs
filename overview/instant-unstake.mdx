@@ -1,30 +1,16 @@
 ---
 title: "Instant Unstake"
-description: "Get your staked SOL back immediately or choose slow unstake to maximize returns"
+description: "Get your staked SOL back immediately - full or partial amounts"
 ---
 
 # Instant Unstake
 
-Hubra gives you two ways to unstake your SOL: **Instant** for immediate liquidity, or **Slow** for maximum returns. You can also unstake partial amounts.
+Hubra lets you unstake your SOL instantly - no waiting for the standard 2-3 day Solana cooldown. Powered by [Sanctum](https://sanctum.so).
 
-## Unstake modes
+## How it works
 
-<CardGroup cols={2}>
-  <Card title="Instant ⚡" icon="bolt">
-    Get SOL back in seconds. Small fee applies.
-  </Card>
-  <Card title="Slow 🕐" icon="clock">
-    Wait 2-3 days. No fees, full amount returned.
-  </Card>
-</CardGroup>
-
-## Instant unstake
-
-Convert your staked SOL to liquid SOL immediately. Powered by [Sanctum](https://sanctum.so).
-
-**How it works:**
 1. Select your stake account
-2. Choose "Instant" mode
+2. Enter the amount to unstake (full or partial)
 3. See the output amount and fees
 4. Confirm the transaction
 5. SOL arrives in your wallet within seconds
@@ -33,7 +19,7 @@ Convert your staked SOL to liquid SOL immediately. Powered by [Sanctum](https://
 Hubra covers all network fees. You only pay the Sanctum liquidity fee.
 </Info>
 
-### Fees
+## Fees
 
 | Fee | Amount | Who pays |
 |-----|--------|----------|
@@ -43,82 +29,52 @@ Hubra covers all network fees. You only pay the Sanctum liquidity fee.
 The exact Sanctum fee depends on available liquidity. You'll see the fee before confirming.
 
 <Warning>
-If price impact exceeds 5%, you'll see a warning. Consider using Slow mode for large amounts.
+If price impact exceeds 5%, you'll see a warning. Consider unstaking in smaller amounts.
 </Warning>
-
-## Slow unstake
-
-Standard Solana unstaking. Your SOL goes through the native cooldown period.
-
-**How it works:**
-1. Select your stake account
-2. Choose "Slow" mode
-3. Confirm the deactivation
-4. Wait 2-3 days (1 full epoch)
-5. Withdraw your full SOL amount
-
-### Fees
-
-| Fee | Amount | Who pays |
-|-----|--------|----------|
-| Sanctum fee | None | - |
-| Network fee | ~0.000005 SOL | Hubra (gasless) |
-
-<Tip>
-The app shows how much more SOL you get with Slow mode. Use this to decide if waiting is worth it.
-</Tip>
 
 ## Partial unstake
 
 Unstake any amount - you don't have to unstake everything at once.
 
-**Example:** You have 100 SOL staked. Unstake 30 SOL, keep 70 SOL earning rewards.
+**Example:** You have 100 SOL staked. Unstake 30 SOL instantly, keep 70 SOL earning rewards.
 
 ### How it works
 
 1. Enter an amount less than your total staked balance
-2. Choose Instant or Slow mode
-3. Hubra splits your stake account automatically
-4. The unstaked portion processes, the rest keeps earning
+2. Hubra splits your stake account automatically
+3. The unstaked portion converts to SOL instantly
+4. The rest keeps earning staking rewards
 
-### Fees
+### Additional fees for partial unstake
 
 | Fee | Amount | Notes |
 |-----|--------|-------|
 | Account rent | ~0.002 SOL | One-time fee for creating split account |
-| Sanctum fee | 0.1-0.5% | Only if using Instant mode |
-| Network fees | Covered | Hubra pays (gasless) |
 
 <Info>
 Minimum unstake amount: 0.01 SOL
 </Info>
 
-## Which should I choose?
+## Why instant unstake?
 
-| Situation | Recommended |
-|-----------|-------------|
-| Need SOL urgently | Instant |
-| Market opportunity | Instant |
-| Can wait 2-3 days | Slow |
-| Large amount (>1000 SOL) | Slow |
-| Unstaking small portion | Either works |
+Traditional Solana unstaking requires a 2-3 day cooldown period. Hubra's instant unstake uses Sanctum's liquidity pools to give you SOL immediately. The small fee (0.1-0.5%) is the cost for instant liquidity.
 
 ## FAQ
 
 <AccordionGroup>
-  <Accordion title="Why is Instant unstake output less than Slow?">
-    Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. This convenience comes with a small fee (0.1-0.5%). Slow unstake uses native Solana deactivation with no intermediary fees.
-  </Accordion>
-  
-  <Accordion title="How long does Slow unstake take?">
-    2-3 days. Solana requires stake to be deactivated for one full epoch before withdrawal. Epoch duration is approximately 2-3 days.
-  </Accordion>
-  
-  <Accordion title="Can I cancel an unstake?">
-    Instant: No, it's immediate. Slow: Yes, you can re-delegate before the cooldown completes.
+  <Accordion title="Why is there a fee?">
+    Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. This convenience comes with a small fee (0.1-0.5%) that goes to liquidity providers.
   </Accordion>
   
   <Accordion title="Is there a minimum unstake amount?">
     Yes, 0.01 SOL minimum. For partial unstakes, the remaining balance must cover rent exemption (~0.002 SOL).
+  </Accordion>
+  
+  <Accordion title="What is price impact?">
+    Price impact occurs when unstaking large amounts relative to available liquidity. Higher price impact means you receive slightly less SOL. The app warns you if impact exceeds 5%.
+  </Accordion>
+  
+  <Accordion title="Can I unstake everything at once?">
+    Yes. Enter your full staked balance to unstake everything instantly.
   </Accordion>
 </AccordionGroup>
