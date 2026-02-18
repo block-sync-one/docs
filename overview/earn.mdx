@@ -1,63 +1,133 @@
 ---
-title: "Earn"
-description: "Discover, compare, and access the best yield opportunities on Solana - all in one cross-platform hub."
+title: Earn
+description: Deposit your assets and watch them grow. Hubra Earn automatically puts your crypto to work across the best yield opportunities on Solana.
 ---
 
-## Scope of Aggregation
+# Earn
 
-Currently, Hubra integrates with:
+Deposit your assets. Watch them grow. No manual work required.
 
-- **Lulo**
-- **Kamino**
-- **Drift**
-- **Save**
-
-By default, Hubra shows the **best-yield opportunity per asset type**.\
-Users who want to go deeper can unlock the **comprehensive filter system**, which displays similar strategies from multiple providers for the same asset.
+Hubra Earn automatically puts your crypto to work across the best yield opportunities on Solana. You deposit, we handle the rest.
 
 ---
 
-## User Flow
+## How it works
 
-1. **Discover** – Browse curated opportunities with clear details:
-   - APY %
-   - Protocol tag
-   - Locking/unlocking times
-   - Strategy type
-2. **Deposit** – When you choose an opportunity, Hubra directly calls the provider’s API.
-   - Hubra itself **never holds your funds**.
-   - You interact with the protocol directly, using Hubra only as the UI layer.
-3. **Track & Withdraw** – Once deposited, your positions sync into your **Portfolio page** for ongoing tracking and easy withdrawal.
+When you deposit an asset into Hubra Earn, you receive a **ra{symbol}** token in return.
 
----
+- Deposit SOL → receive raSOL
+- Deposit USDC → receive raUSDC
+- Deposit USDT → receive raUSDT
 
-## Cross-Platform Design
+Your ra{symbol} token represents your share of a yield-generating vault. As the vault earns yield, your token becomes worth more over time.
 
-The Earn experience is consistent across **web, PWA, and Solana Mobile**.\
-Only small layout adjustments are made between large and small screens — the flow stays the same.
+### The exchange-rate model
 
----
+Here's the key concept: **ra{symbol} tokens appreciate in value.**
 
-## Why Use Hubra for Yield?
+You don't need to claim rewards or reinvest manually. The value backing each token increases automatically as yield accrues.
 
-Hubra isn’t just an aggregator — it’s a **full earn system**:
+**Example:**
 
-- **Best-first filtering** – Only the strongest opportunities are surfaced by default.
-- **Fewer hops** – No need to jump between apps; everything is unified.
-- **Portfolio integration** – Deposits appear in your portfolio automatically.
-- **One-click actions** – Deposit, track, and withdraw seamlessly.
+Let's say you deposit USDC when the exchange rate is 1 raUSDC = 1.00 USDC.
 
-Hubra empowers you to put your assets to work with **CeFi-like simplicity and DeFi-level access**.
+A few months later, after yield has accumulated, the rate might be 1 raUSDC = 1.04 USDC.
+
+Your raUSDC balance stays the same, but each token is now worth 4% more. When you withdraw, you get back more USDC than you deposited.
+
+This model is similar to how Aave's aTokens or Compound's cTokens work — your balance doesn't change, but its value does.
 
 ---
 
-## Disclaimer
+## What happens behind the scenes
 
-DeFi opportunities carry inherent risk.\
-By using Hubra’s Earn page, users acknowledge and accept that:
+Hubra doesn't just park your funds in one place. The system actively optimizes where your assets are deployed.
 
-- Yields are variable and may change at any time.
-- Protocols may introduce smart contract, liquidity, or counterparty risk.
-- Hubra does **not custody funds** and does not guarantee returns.
+### Copilot: the decision engine
 
-You are solely responsible for evaluating risks before depositing into any opportunity.
+Copilot is the brain that manages yield optimization. Every 30 minutes, it:
+
+1. **Scans available opportunities** — lending protocols, liquidity pools, staking options
+2. **Applies safety filters** — only considers pools with sufficient TVL and liquidity
+3. **Picks the best option** — selects the highest-yielding strategy that passes all checks
+4. **Triggers rebalancing** — moves funds to capture the better rate
+
+You don't have to monitor rates, compare protocols, or manually move funds. Copilot handles it.
+
+### Safety controls
+
+Not every yield opportunity is worth the risk. Copilot enforces strict safety rules:
+
+- **Minimum TVL** — only allocates to pools above $500k in total value locked
+- **Dilution limits** — avoids pools where Hubra's deposit would be too large a share
+- **Liquidity checks** — ensures you can withdraw without significant slippage
+- **Simulation before execution** — every rebalance is simulated on-chain before it runs
+
+If no opportunity passes the safety checks, funds stay where they are rather than chasing risky yield.
+
+---
+
+## Supported assets
+
+### Stablecoins
+
+Stable vaults use automated lending strategies across Kamino, Drift, and Jupiter:
+
+- **raUSDC** — USD Coin
+- **raUSDT** — Tether
+- **raUSDS** — sUSD
+- **raUSDG** — USDG
+- **raUSD1** — USD1
+
+### SOL
+
+- **raSOL** — Liquid staking token powered by Sanctum Infinity. Earns staking rewards while staying liquid.
+
+---
+
+## Withdrawals
+
+You can withdraw anytime. No lockups, no cooldowns, no unstaking delays.
+
+When you withdraw:
+- Your ra{symbol} tokens are burned
+- You receive the underlying asset at the current exchange rate
+- The amount includes your original deposit plus all accumulated yield
+
+Withdrawals are instant and don't incur slippage.
+
+---
+
+## Fees
+
+Currently, Hubra Earn charges:
+
+- No management fee
+- No performance fee
+- No withdrawal fee
+
+This may change in the future, but any fee changes will be announced in advance.
+
+---
+
+## FAQ
+
+### Do I need to claim rewards?
+
+No. Yield accrues automatically into your ra{symbol} token value. There's nothing to claim or reinvest.
+
+### How often does rebalancing happen?
+
+Copilot evaluates opportunities every 30 minutes and rebalances when a better option is available.
+
+### Is my principal at risk?
+
+DeFi carries inherent risks including smart contract vulnerabilities and protocol failures. Hubra only allocates to audited protocols and enforces safety controls, but no yield product is risk-free. Only deposit what you can afford to have exposed to DeFi risk.
+
+### Why did I receive slightly less ra{symbol} than I deposited?
+
+ra{symbol} tokens appreciate over time, so the exchange rate isn't always 1:1. If you deposit when 1 raUSDC = 1.02 USDC, your 100 USDC gets you ~98 raUSDC. This is normal — you're buying into accumulated yield.
+
+### Can I see where my funds are deployed?
+
+Yes. The dashboard shows current allocations and which protocols are being used for each vault.
