@@ -1,111 +1,69 @@
 ---
-title: "Earn"
-description: "Discover yield opportunities and deposit into yield-bearing assets (ra tokens) that grow automatically."
+title: Earn
+description: Deposit assets, receive yield-bearing tokens that grow in value over time.
 ---
 
-## Overview
+# Earn
 
-Hubra Earn lets you put your assets to work in two ways:
+Deposit an asset into Hubra. Receive a ra{asset} token in return. That token grows in value as yield accrues.
 
-1. **Browse opportunities** — Compare yields across protocols
-2. **Deposit into ra{asset}** — Get a yield-bearing token that appreciates automatically
+No claiming rewards. No manual management. Hold the token and its value increases.
 
----
+## How ra{asset} tokens work
 
-## Yield-Bearing Assets (YBA)
+When you deposit, you receive ra{asset} tokens based on the current exchange rate.
 
-When you deposit into Hubra, you receive **ra{asset}** tokens—yield-bearing assets that grow in value over time.
+The token uses an exchange-rate model: your balance stays the same, but each token becomes worth more over time as yield compounds.
+
+**Example:**
+- You deposit 1,000 USDC
+- You receive raUSDC based on the current rate (if 1 raUSDC = 1.01 USDC, you get ~990 raUSDC)
+- Over time, 1 raUSDC might equal 1.05 USDC
+- Your raUSDC balance stays at ~990, but it's now worth ~1,040 USDC
 
 <Info>
-ra{asset} tokens use an exchange-rate model. Your token count stays the same—the value per token increases as yield compounds.
+This is the same model used by lending tokens like cTokens and aTokens. Your balance doesn't change. The value per token increases.
 </Info>
 
-### How It Works
+## Why this model
 
-**1. Deposit**
+- **No claiming** — yield shows up in the token value automatically
+- **No rebasing** — your balance stays constant
+- **Fully transferable** — use ra{asset} anywhere: trade it, use as collateral, move between wallets
 
-Deposit a supported asset. You receive ra{asset} in return.
+## Withdraw anytime
 
-- Deposit 1,000 USDC → receive ~1,000 raUSDC
-- The exact amount depends on the current exchange rate (later depositors receive slightly fewer tokens, but each token is worth more)
+Redeem your ra{asset} for the underlying asset plus earned yield. No lockups. No cooldowns.
 
-**2. Yield Accrues**
+## Supported assets
 
-Hubra optimizes your position across lending protocols. Yield compounds into the token value.
+**Stablecoins:**
+- raUSDC
+- raUSDT  
+- raUSDS
+- raUSDG
+- raUSD1
 
-- After some time: 1 raUSDC = 1.04 USDC
-- Your 1,000 raUSDC is now worth 1,040 USDC
+Yield comes from lending protocols like Kamino, Drift, and Jupiter.
 
-**3. Withdraw**
+**raSOL:**
+Liquid staking token built on Sanctum. Earns staking rewards.
 
-Redeem ra{asset} for the underlying asset plus all earned yield. Instant. No cooldowns.
+## Auto optimization
 
-### Why ra{asset}?
+Hubra automatically moves your position to higher-yield opportunities when they appear. You don't need to monitor rates or manually migrate between protocols.
 
-- **No claiming** — yield automatically reflected in token value
-- **No rebasing** — your balance doesn't change
-- **Fully transferable** — trade, use as collateral, or move anywhere
+Migration only happens when:
+- The new opportunity offers at least 1% more APY
+- The pool can handle your position size
+- There's no withdrawal cooldown
 
-### Supported Assets
-
-**Stablecoins:** raUSDC, raUSDT, raUSDS, raUSDG, raUSD1
-
-**SOL:** raSOL (liquid staking via Sanctum)
-
----
-
-## Browsing Opportunities
-
-Hubra aggregates yields from top Solana protocols:
-
-- **Kamino**
-- **Drift**  
-- **Jupiter**
-
-### User Flow
-
-1. **Discover** — Browse opportunities with APY, protocol info, and strategy details
-2. **Deposit** — Hubra calls the protocol directly. Your funds never touch Hubra.
-3. **Track** — Positions sync to your Portfolio for easy monitoring
-
----
-
-## Fees
-
-- No management fee
-- No performance fee
-- No withdrawal fee
-
----
-
-## Withdrawals
-
-- **Instant** — no waiting period
-- **No cooldown** — withdraw anytime
-- **Full value** — underlying asset plus all earned yield
-
----
+All transactions appear in your activity feed with explanations of what happened and why.
 
 ## Risks
 
-- **Smart contract risk** — bugs or exploits possible in underlying protocols
-- **Variable yield** — APY changes based on market conditions
-- **Protocol risk** — each protocol carries its own risks
+**Smart contract risk:** Hubra uses vetted protocols, but DeFi contracts can have bugs.
 
-Hubra does not custody funds and does not guarantee returns.
+**Variable rates:** APY changes based on market conditions. Past rates don't guarantee future returns.
 
----
-
-## FAQ
-
-**How is this different from Copilot?**
-
-Copilot automatically moves idle wallet funds into yield. Earn lets you manually deposit into specific opportunities or ra{asset} tokens.
-
-**Can I trade ra{asset} tokens?**
-
-Yes. They're standard tokens—transfer, trade, or use as collateral anywhere.
-
-**Is there a minimum deposit?**
-
-No minimum.
+**Liquidity:** Large withdrawals during extreme market conditions might affect timing.
