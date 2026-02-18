@@ -1,13 +1,13 @@
 ---
 title: Auto Earn
-description: Deposit once, yield compounds automatically. Hubra's yield-bearing assets (ra tokens) grow in value as the rebalancer optimizes your position.
+description: Deposit once, yield compounds automatically. Hubra's yield-bearing assets (ra tokens) grow in value over time.
 ---
 
 # Auto Earn
 
-Auto Earn is Hubra's yield-bearing asset system. Deposit an asset, receive a ra{asset} token that grows in value over time.
+Deposit an asset, receive a ra{asset} token that grows in value over time.
 
-No claiming rewards. No manual rebalancing. Your token appreciates as yield accrues.
+No claiming rewards. No manual management. Your token appreciates as yield accrues.
 
 <Info>
 ra{asset} tokens use an exchange-rate model. The number of tokens you hold stays the same—their backing value increases as yield compounds.
@@ -26,7 +26,7 @@ Deposit a supported asset into Hubra. You receive ra{asset} in return.
 
 ### 2. Yield Accrues
 
-The rebalancer continuously optimizes your position across lending protocols. Yield compounds into the token value.
+Hubra automatically optimizes your position across lending protocols. Yield compounds into the token value.
 
 **Example:**
 - After some time, 1 raUSDC = 1.04 USDC
@@ -38,73 +38,33 @@ Redeem your ra{asset} for the underlying asset plus all earned yield. Instant. N
 
 ---
 
-## The Rebalancer
+## Why ra{asset}?
 
-Every 30 minutes, the rebalancer:
+Your token balance stays the same. The value per token increases.
 
-1. **Fetches live APY data** from integrated protocols
-2. **Applies safety filters** (TVL, dilution limits)
-3. **Selects the highest-yield pool** that passes all checks
-4. **Moves capital** to the winning strategy
+- **No claiming** — yield is automatically reflected in token value
+- **No rebasing** — your balance doesn't change
+- **Fully transferable** — use ra{asset} anywhere (trade, collateral, DeFi)
 
-This isn't passive diversification. The rebalancer actively chases the best yield while respecting safety constraints.
-
-<Note>
-If no pool passes safety checks or the API is unavailable, funds fall back to equal-weight allocation across all strategies.
-</Note>
-
----
-
-## Safety Controls
-
-The rebalancer enforces strict rules:
-
-| Check | Requirement |
-|-------|-------------|
-| **Minimum TVL** | Pool must have > $500k total value locked |
-| **Dilution limit** | Your deposit can't exceed 0.5% of pool TVL |
-| **Locked liquidity** | Respects protocol lock periods; only moves withdrawable funds |
-| **On-chain simulation** | Transactions simulated before execution |
-
-### Why Dilution Matters
-
-Depositing into a small pool tanks the yield for everyone. The dilution guard prevents this.
-
-**Example:** A $1M pool at 5.5% APY. If you deposit $500k, your share dilutes the yield significantly. The rebalancer avoids this by capping your position relative to pool size.
+This is the same model used by popular tokens like cTokens and aTokens.
 
 ---
 
 ## Supported Assets
 
-### Stablecoins (Lending Strategies)
+### Stablecoins
 
-| Token | Strategies |
-|-------|-----------|
-| raUSDC | Kamino, Drift, Jupiter |
-| raUSDT | Kamino, Drift, Jupiter |
-| raUSDS | Kamino, Drift, Jupiter |
-| raUSDG | Kamino, Drift, Jupiter |
-| raUSD1 | Kamino, Drift, Jupiter |
+- raUSDC
+- raUSDT
+- raUSDS
+- raUSDG
+- raUSD1
 
-Each stablecoin vault automatically allocates to the highest-yield lending opportunity across these protocols.
+Each earns yield from lending protocols like Kamino, Drift, and Jupiter.
 
-### raSOL (Liquid Staking)
+### raSOL
 
-raSOL is a liquid staking token built on Sanctum. It follows the same exchange-rate model but earns staking rewards instead of lending yield.
-
----
-
-## Exchange-Rate Model
-
-Hubra's ra{asset} tokens don't rebase. Your balance stays constant; the value per token increases.
-
-**How it works:**
-- You hold 1,000 raUSDC
-- Exchange rate starts at 1 raUSDC = 1 USDC
-- Yield accrues → exchange rate becomes 1 raUSDC = 1.04 USDC
-- Your 1,000 raUSDC is now worth 1,040 USDC
-
-This model is used by cTokens (Compound), aTokens (Aave), and liquid staking tokens. No need to claim rewards—they're automatically reflected in your token's value.
+Liquid staking token built on Sanctum. Earns staking rewards instead of lending yield.
 
 ---
 
@@ -115,46 +75,34 @@ Currently:
 - No performance fee
 - No withdrawal fee
 
-Fee mechanisms may be introduced in the future.
-
 ---
 
 ## Withdrawals
 
 - **Instant** — no waiting period
-- **No slippage** — redeem at current exchange rate
 - **No cooldown** — withdraw anytime
+- **Full value** — receive underlying asset plus all earned yield
 
 ---
 
 ## Risks
 
-**Smart contract risk**: ra{asset} tokens rely on vault contracts and integrated protocols. Bugs or exploits are possible.
-
-**Protocol risk**: The underlying lending protocols (Kamino, Drift, Jupiter) carry their own risks.
-
-**Variable yield**: APY fluctuates based on market conditions and protocol rates.
-
-**Depeg risk**: In extreme conditions, ra{asset} could temporarily trade below its backing value on secondary markets.
+- **Smart contract risk** — bugs or exploits are possible
+- **Variable yield** — APY changes based on market conditions
+- **Protocol risk** — underlying protocols carry their own risks
 
 ---
 
 ## FAQ
 
 **How is this different from Copilot?**
-Copilot moves your idle wallet funds into lending protocols. Auto Earn gives you a single token (ra{asset}) that represents an optimized, auto-rebalancing position. Different tools for different use cases.
+Copilot moves idle wallet funds into lending protocols. Auto Earn gives you a single token (ra{asset}) that represents an optimized position.
 
 **Can I trade ra{asset} tokens?**
-Yes. They're standard tokens you can transfer, trade, or use as collateral in DeFi.
-
-**How often does rebalancing happen?**
-Every 30 minutes, plus whenever new deposits are detected.
-
-**What if the best pool changes mid-cycle?**
-The rebalancer catches it on the next cycle and migrates funds if the improvement is significant.
+Yes. They're standard tokens you can transfer, trade, or use as collateral.
 
 **Is there a minimum deposit?**
-No hard minimum, but very small deposits may not be cost-effective due to transaction fees.
+No minimum.
 
 ---
 
@@ -162,6 +110,5 @@ No hard minimum, but very small deposits may not be cost-effective due to transa
 
 1. Open the Hubra app
 2. Navigate to **Earn**
-3. Select the asset you want to deposit
-4. Deposit and receive your ra{asset} token
-5. Watch your token value grow
+3. Deposit your asset
+4. Receive ra{asset} and watch it grow
