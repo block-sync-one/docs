@@ -50,6 +50,22 @@ Copilot is the brain that manages yield optimization. Every 30 minutes, it:
 
 You don't have to monitor rates, compare protocols, or manually move funds. Copilot handles it.
 
+### Fully automated & permissionless
+
+The rebalancer runs autonomously. No manual intervention, no human operators deciding where funds go.
+
+Every rebalance follows the same logic:
+- Fetch live yield data
+- Apply safety filters
+- Pick the highest-yield pool that passes all checks
+- Execute the move
+
+**Open source:** The rebalancer code is public. You can audit the logic, verify how decisions are made, and see exactly what runs under the hood.
+
+<Card title="Vaults Rebalancer" icon="github" href="https://github.com/block-sync-one/vaults-rebalancer">
+  View the source code on GitHub
+</Card>
+
 ---
 
 ## Supported assets
