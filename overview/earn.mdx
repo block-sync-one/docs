@@ -9,29 +9,26 @@ Hubra Earn automatically puts your crypto to work across the best yield opportun
 
 ## How it works
 
-When you deposit an asset into Hubra Earn, you receive a **ra** token in return.
+### 1. Deposit
 
-- Deposit SOL → receive raSOL
-- Deposit USDC → receive raUSDC
-- Deposit USDT → receive raUSDT
+Deposit any supported asset into Hubra Earn. Your funds immediately start generating yield.
 
-Your ra token represents your share of a yield-generating position. As the position earns yield, your token becomes worth more over time.
+### 2. Track your balance
 
-### The exchange-rate model
+In the Hubra app, you'll see your **original asset** (USDC, SOL, etc.) in the tokens tab — not a new token symbol.
 
-Here's the key concept: **ra tokens appreciate in value.**
+Tap on the asset to see:
+- **Idle balance** — funds sitting in your wallet
+- **Earning balance** — funds actively generating yield
+- **Current APY** — the rate you're earning right now
 
-You don't need to claim rewards or reinvest manually. The value backing each token increases automatically as yield accrues.
+### 3. Yield accrues automatically
 
-**Example:**
+Behind the scenes, Hubra uses an exchange-rate model. Your earning balance appreciates over time as yield compounds — no claiming or reinvesting needed.
 
-Let's say you deposit USDC when the exchange rate is 1 raUSDC = 1.00 USDC.
+### 4. Withdraw anytime
 
-A few months later, after yield has accumulated, the rate might be 1 raUSDC = 1.04 USDC.
-
-Your raUSDC balance stays the same, but each token is now worth 4% more. When you withdraw, you get back more USDC than you deposited.
-
-This model is similar to how Aave's aTokens or Compound's cTokens work — your balance doesn't change, but its value does.
+Pull out whenever you want. No lockups, no cooldowns. You get your original deposit plus all accumulated yield.
 
 ---
 
@@ -39,26 +36,30 @@ This model is similar to how Aave's aTokens or Compound's cTokens work — your 
 
 Hubra doesn't just park your funds in one place. The system actively optimizes where your assets are deployed.
 
+### The exchange-rate model
+
+Under the hood, your earning balance is represented by **ra tokens** (raUSDC, raSOL, etc.). These tokens appreciate in value as yield accrues.
+
+**Example:**
+
+You deposit 100 USDC. Over time, as yield accumulates, that position might be worth 104 USDC — even though you never claimed anything.
+
+You don't see ra tokens in the Hubra app — we show you the actual dollar value. But the math works the same as Aave's aTokens or Compound's cTokens.
+
 ### Copilot: the decision engine
 
 Copilot is the brain that manages yield optimization. Every 30 minutes, it:
 
-1. **Scans available opportunities** - lending protocols, liquidity pools, staking options
-2. **Applies safety filters** - only considers pools with sufficient TVL and liquidity
-3. **Picks the best option** - selects the highest-yielding strategy that passes all checks
-4. **Triggers rebalancing** - moves funds to capture the better rate
+1. **Scans available opportunities** — lending protocols, liquidity pools, staking options
+2. **Applies safety filters** — only considers pools with sufficient TVL and liquidity
+3. **Picks the best option** — selects the highest-yielding strategy that passes all checks
+4. **Triggers rebalancing** — moves funds to capture the better rate
 
 You don't have to monitor rates, compare protocols, or manually move funds. Copilot handles it.
 
 ### Fully automated & permissionless
 
 The rebalancer runs autonomously. No manual intervention, no human operators deciding where funds go.
-
-Every rebalance follows the same logic:
-- Fetch live yield data
-- Apply safety filters
-- Pick the highest-yield pool that passes all checks
-- Execute the move
 
 **Open source:** The rebalancer code is public. You can audit the logic, verify how decisions are made, and see exactly what runs under the hood.
 
@@ -74,25 +75,27 @@ Every rebalance follows the same logic:
 
 Stablecoin strategies use automated lending across Kamino, Drift, and Jupiter:
 
-- **raUSDC** - USDC
-- **raUSDT** - Tether
-- **raUSDS** - USDS
-- **raUSDG** - USDG
-- **raUSD1** - USD1
+- **USDC**
+- **USDT** (Tether)
+- **USDS**
+- **USDG**
+- **USD1**
 
 ### SOL
 
-- **raSOL** - Liquid staking token powered by Sanctum Infinity. Earns staking rewards while staying liquid.
+- **SOL** — Earns liquid staking rewards via Sanctum Infinity while staying liquid.
 
 ---
 
 ## External Wallet Users
 
-If you're using an external wallet and start an Earn position, you may see a token called `raXXXX` (e.g., raUSDC, raSOL) appear in your wallet app.
+If you connect an external wallet (Phantom, Backpack, etc.) and deposit into Earn, you may see a token called `raXXXX` (e.g., raUSDC, raSOL) appear in your wallet app.
 
 <Warning>
 **Important:** Do not burn, transfer, or interact with this token outside of Hubra. This token represents your working capital in Hubra Earn. Removing it will result in loss of funds.
 </Warning>
+
+In the Hubra app, you won't see these ra tokens — we display your actual asset balance instead.
 
 ---
 
@@ -102,8 +105,8 @@ You can withdraw anytime. No lockups, no cooldowns, no unstaking delays.
 
 When you withdraw:
 
-- Your ra tokens are burned
-- You receive the underlying asset at the current exchange rate
+- Your earning position is closed
+- You receive the underlying asset at the current value
 - The amount includes your original deposit plus all accumulated yield
 
 Withdrawals are instant and don't incur slippage.
@@ -114,7 +117,7 @@ Withdrawals are instant and don't incur slippage.
 
 ### Do I need to claim rewards?
 
-No. Yield accrues automatically into your ra token value. There's nothing to claim or reinvest.
+No. Yield accrues automatically. There's nothing to claim or reinvest.
 
 ### How often does rebalancing happen?
 
@@ -126,6 +129,6 @@ DeFi carries inherent risks including smart contract vulnerabilities and protoco
 
 Only deposit what you can afford to have exposed to DeFi risk.
 
-### Why did I receive slightly less ra tokens than I deposited?
+### Why does my external wallet show a different token?
 
-ra tokens appreciate over time, so the exchange rate isn't always 1:1. If you deposit when 1 raUSDC = 1.02 USDC, your 100 USDC gets you ~98 raUSDC. This is normal — you're buying into accumulated yield.
+External wallets display the raw ra tokens (raUSDC, raSOL, etc.) that represent your position. The Hubra app converts this to show your actual asset value instead.
