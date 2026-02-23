@@ -23,9 +23,9 @@
           {
             "group": "Hubra overview",
             "pages": [
-              "overview/trends",
               "overview/earn",
               "overview/copilot",
+              "overview/trends",
               "overview/instant-unstake",
               "overview/portfolio"
             ]

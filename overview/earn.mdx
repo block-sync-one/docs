@@ -15,7 +15,7 @@ When you deposit an asset into Hubra Earn, you receive a **ra** token in return.
 - Deposit USDC → receive raUSDC
 - Deposit USDT → receive raUSDT
 
-Your rasymbol token represents your share of a yield-generating vault. As the vault earns yield, your token becomes worth more over time.
+Your ra token represents your share of a yield-generating position. As the position earns yield, your token becomes worth more over time.
 
 ### The exchange-rate model
 
@@ -62,7 +62,7 @@ Every rebalance follows the same logic:
 
 **Open source:** The rebalancer code is public. You can audit the logic, verify how decisions are made, and see exactly what runs under the hood.
 
-<Card title="Vaults Rebalancer" icon="github" href="https://github.com/block-sync-one/vaults-rebalancer">
+<Card title="Rebalancer" icon="github" href="https://github.com/block-sync-one/vaults-rebalancer">
   View the source code on GitHub
 </Card>
 
@@ -72,7 +72,7 @@ Every rebalance follows the same logic:
 
 ### Stablecoins
 
-Stable vaults use automated lending strategies across Kamino, Drift, and Jupiter:
+Stablecoin strategies use automated lending across Kamino, Drift, and Jupiter:
 
 - **raUSDC** - USDC
 - **raUSDT** - Tether
@@ -86,13 +86,23 @@ Stable vaults use automated lending strategies across Kamino, Drift, and Jupiter
 
 ---
 
+## External Wallet Users
+
+If you're using an external wallet and start an Earn position, you may see a token called `raXXXX` (e.g., raUSDC, raSOL) appear in your wallet app.
+
+<Warning>
+**Important:** Do not burn, transfer, or interact with this token outside of Hubra. This token represents your working capital in Hubra Earn. Removing it will result in loss of funds.
+</Warning>
+
+---
+
 ## Withdrawals
 
 You can withdraw anytime. No lockups, no cooldowns, no unstaking delays.
 
 When you withdraw:
 
-- Your rasymbol tokens are burned
+- Your ra tokens are burned
 - You receive the underlying asset at the current exchange rate
 - The amount includes your original deposit plus all accumulated yield
 
@@ -104,7 +114,7 @@ Withdrawals are instant and don't incur slippage.
 
 ### Do I need to claim rewards?
 
-No. Yield accrues automatically into your rasymbol token value. There's nothing to claim or reinvest.
+No. Yield accrues automatically into your ra token value. There's nothing to claim or reinvest.
 
 ### How often does rebalancing happen?
 
@@ -116,6 +126,6 @@ DeFi carries inherent risks including smart contract vulnerabilities and protoco
 
 Only deposit what you can afford to have exposed to DeFi risk.
 
-### Why did I receive slightly less rasymbol than I deposited?
+### Why did I receive slightly less ra tokens than I deposited?
 
-ra{symbo}l tokens appreciate over time, so the exchange rate isn't always 1:1. If you deposit when 1 raUSDC = 1.02 USDC, your 100 USDC gets you ~98 raUSDC. This is normal — you're buying into accumulated yield.
+ra tokens appreciate over time, so the exchange rate isn't always 1:1. If you deposit when 1 raUSDC = 1.02 USDC, your 100 USDC gets you ~98 raUSDC. This is normal — you're buying into accumulated yield.
