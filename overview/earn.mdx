@@ -68,6 +68,54 @@ Every rebalance follows the same logic:
 
 ---
 
+## Security & Risk
+
+Hubra Earn is built on top of [Ranger Finance](https://ranger.finance) — an institutional-grade vault infrastructure designed for professional asset managers and hedge funds.
+
+### Non-custodial architecture
+
+Ranger vaults operate on a **non-custodial basis**. For fully on-chain strategies, neither Hubra nor Ranger can withdraw user deposits. Strategy execution is restricted to whitelisted protocols and functions, ensuring your funds remain under programmatic control at all times.
+
+### Audited smart contracts
+
+Ranger's vault infrastructure has undergone multiple professional security audits:
+
+| Component | Auditor | Status |
+|-----------|---------|--------|
+| Vault Program | Sec3 X-RAY | ✅ Passed |
+| Adapter Programs | Sec3 X-RAY | ✅ Passed |
+| Vault Program | FYEO | ✅ Passed |
+
+### Whitelisted protocol integrations
+
+Funds can only interact with pre-approved, audited protocols through Ranger's adapter system:
+
+- **Lending:** Kamino, Marginfi, Save (Solend)
+- **Trading:** Drift, Raydium CLMM
+- **Swaps:** Jupiter
+
+### Transparency
+
+All vault positions and protocol interactions are visible on-chain. You can verify exactly how yield is generated and assess the protocols involved at any time.
+
+<Card title="Ranger Finance Documentation" icon="book-open" href="https://docs.ranger.finance/ranger-earn">
+  Learn more about Ranger's vault infrastructure and security model
+</Card>
+
+### Understanding the risks
+
+While Hubra employs institutional-grade infrastructure and only allocates to audited protocols, DeFi carries inherent risks:
+
+- **Smart contract risk** — vulnerabilities in underlying protocols
+- **Protocol risk** — potential failures in integrated DeFi platforms
+- **Market risk** — fluctuations in asset values and yields
+
+<Warning>
+Only deposit what you can afford to have exposed to DeFi risk. No yield product is completely risk-free.
+</Warning>
+
+---
+
 ## Supported assets
 
 ### Stablecoins
