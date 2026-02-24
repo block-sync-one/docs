@@ -1,13 +1,27 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Hubra",
   "colors": {
     "primary": "#FEAA01",
     "light": "#FEAA01",
     "dark": "#FEAA01"
   },
   "favicon": "/favicon.svg",
+  "metadata": {
+    "og:site_name": "Hubra Documentation",
+    "og:title": "Hubra - Financial Superpowers for Everyone",
+    "og:description": "The easiest way to earn yield on Solana. Deposit crypto, earn automatically. No complexity, no gas fees.",
+    "og:image": "https://hubra.app/og-image.png",
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@hubraapp",
+    "twitter:title": "Hubra - Financial Superpowers for Everyone",
+    "twitter:description": "The easiest way to earn yield on Solana. Deposit crypto, earn automatically.",
+    "twitter:image": "https://hubra.app/og-image.png"
+  },
+  "seo": {
+    "indexHiddenPages": false
+  },
   "navigation": {
     "tabs": [
       {
@@ -98,9 +112,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/hubrapp",
+      "x": "https://x.com/hubraapp",
       "github": "https://github.com/block-sync-one/hubra",
-      "telegram": "https://https://t.me/+MNkcRntOTlkxNThk"
+      "telegram": "https://tg.hubra.app"
     }
   }
 }
