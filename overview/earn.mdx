@@ -18,9 +18,10 @@ Deposit any supported asset into Hubra Earn. Your funds immediately start genera
 In the Hubra app, you'll see your **original asset** (USDC, SOL, etc.) in the tokens tab — not a new token symbol.
 
 Tap on the asset to see:
-- **Idle balance** — funds sitting in your wallet
-- **Earning balance** — funds actively generating yield
-- **Current APY** — the rate you're earning right now
+
+- **Idle balance** - funds sitting in your wallet
+- **Earning balance** - funds actively generating yield
+- **Current APY** 0 the rate you're earning right now
 
 ### 3. Yield accrues automatically
 
@@ -42,20 +43,9 @@ Under the hood, your earning balance is represented by **ra tokens** (raUSDC, ra
 
 **Example:**
 
-You deposit 100 USDC. Over time, as yield accumulates, that position might be worth 104 USDC — even though you never claimed anything.
+You deposit 100 USDC. Over time, as yield accumulates, that position might be worth 104 USDC - even though you never claimed anything.
 
 You don't see ra tokens in the Hubra app — we show you the actual dollar value. But the math works the same as Aave's aTokens or Compound's cTokens.
-
-### Copilot: the decision engine
-
-Copilot is the brain that manages yield optimization. Every 30 minutes, it:
-
-1. **Scans available opportunities** — lending protocols, liquidity pools, staking options
-2. **Applies safety filters** — only considers pools with sufficient TVL and liquidity
-3. **Picks the best option** — selects the highest-yielding strategy that passes all checks
-4. **Triggers rebalancing** — moves funds to capture the better rate
-
-You don't have to monitor rates, compare protocols, or manually move funds. Copilot handles it.
 
 ### Fully automated & permissionless
 
@@ -63,7 +53,7 @@ The rebalancer runs autonomously. No manual intervention, no human operators dec
 
 **Open source:** The rebalancer code is public. You can audit the logic, verify how decisions are made, and see exactly what runs under the hood.
 
-<Card title="Rebalancer" icon="github" href="https://github.com/block-sync-one/vaults-rebalancer">
+<Card icon="github" href="https://github.com/block-sync-one/vaults-rebalancer" title="Rebalancer">
   View the source code on GitHub
 </Card>
 
@@ -81,25 +71,23 @@ Ranger vaults operate on a **non-custodial basis**. For fully on-chain strategie
 
 Ranger's vault infrastructure has undergone multiple professional security audits:
 
-| Component | Auditor | Status |
-|-----------|---------|--------|
-| Vault Program | Sec3 X-RAY | ✅ Passed |
+| Component        | Auditor    | Status   |
+| ---------------- | ---------- | -------- |
+| Vault Program    | Sec3 X-RAY | ✅ Passed |
 | Adapter Programs | Sec3 X-RAY | ✅ Passed |
-| Vault Program | FYEO | ✅ Passed |
+| Vault Program    | FYEO       | ✅ Passed |
 
 ### Whitelisted protocol integrations
 
 Funds can only interact with pre-approved, audited protocols through Ranger's adapter system:
 
-- **Lending:** Kamino, Marginfi, Save (Solend)
-- **Trading:** Drift, Raydium CLMM
-- **Swaps:** Jupiter
+- **Lending:** Kamino, Drift, Jupiter
 
 ### Transparency
 
 All vault positions and protocol interactions are visible on-chain. You can verify exactly how yield is generated and assess the protocols involved at any time.
 
-<Card title="Ranger Finance Documentation" icon="book-open" href="https://docs.ranger.finance/ranger-earn">
+<Card icon="book-open" href="https://docs.ranger.finance/ranger-earn" title="Ranger Finance Documentation">
   Learn more about Ranger's vault infrastructure and security model
 </Card>
 
@@ -107,12 +95,12 @@ All vault positions and protocol interactions are visible on-chain. You can veri
 
 While Hubra employs institutional-grade infrastructure and only allocates to audited protocols, DeFi carries inherent risks:
 
-- **Smart contract risk** — vulnerabilities in underlying protocols
-- **Protocol risk** — potential failures in integrated DeFi platforms
-- **Market risk** — fluctuations in asset values and yields
+- **Smart contract risk** - vulnerabilities in underlying protocols
+- **Protocol risk** - potential failures in integrated DeFi platforms
+- **Market risk** - fluctuations in asset values and yields
 
 <Warning>
-Only deposit what you can afford to have exposed to DeFi risk. No yield product is completely risk-free.
+  Only deposit what you can afford to have exposed to DeFi risk. No yield product is completely risk-free.
 </Warning>
 
 ---
@@ -124,14 +112,10 @@ Only deposit what you can afford to have exposed to DeFi risk. No yield product 
 Stablecoin strategies use automated lending across Kamino, Drift, and Jupiter:
 
 - **USDC**
-- **USDT** (Tether)
+- **USDT**
 - **USDS**
 - **USDG**
 - **USD1**
-
-### SOL
-
-- **SOL** — Earns liquid staking rewards via Sanctum Infinity while staying liquid.
 
 ---
 
@@ -140,10 +124,10 @@ Stablecoin strategies use automated lending across Kamino, Drift, and Jupiter:
 If you connect an external wallet (Phantom, Backpack, etc.) and deposit into Earn, you may see a token called `raXXXX` (e.g., raUSDC, raSOL) appear in your wallet app.
 
 <Warning>
-**Important:** Do not burn, transfer, or interact with this token outside of Hubra. This token represents your working capital in Hubra Earn. Removing it will result in loss of funds.
+  **Important:** Do not burn, transfer, or interact with this token outside of Hubra. This token represents your working capital in Hubra Earn. Removing it will result in loss of funds.
 </Warning>
 
-In the Hubra app, you won't see these ra tokens — we display your actual asset balance instead.
+In the Hubra app, you won't see these ra tokens - we display your actual asset balance instead.
 
 ---
 
@@ -173,7 +157,7 @@ Copilot evaluates opportunities every 30 minutes and rebalances when a better op
 
 ### Is my principal at risk?
 
-DeFi carries inherent risks including smart contract vulnerabilities and protocol failures. Hubra only allocates to audited protocols and enforces safety controls, but no yield product is risk-free. 
+DeFi carries inherent risks including smart contract vulnerabilities and protocol failures. Hubra only allocates to audited protocols and enforces safety controls, but no yield product is risk-free.
 
 Only deposit what you can afford to have exposed to DeFi risk.
 

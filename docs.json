@@ -23,6 +23,25 @@
     "indexHiddenPages": false
   },
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Website",
+          "icon": "globe",
+          "href": "https://www.hubra.app"
+        },
+        {
+          "anchor": "Discord",
+          "icon": "discord",
+          "href": "https://discord.hubra.app"
+        },
+        {
+          "anchor": "News",
+          "icon": "x",
+          "href": "https://x.com/hubraapp"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Documentation",
@@ -39,7 +58,6 @@
             "pages": [
               "overview/earn",
               "overview/copilot",
-              "overview/trends",
               "overview/instant-unstake",
               "overview/portfolio"
             ]
@@ -60,26 +78,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Website",
-          "href": "https://www.hubra.app",
-          "icon": "globe"
-        },
-        {
-          "anchor": "Discord",
-          "href": "https://discord.hubra.app",
-          "icon": "discord"
-        },
-        {
-          "anchor": "News",
-          "href": "https://x.com/hubraapp",
-          "icon": "x"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
