@@ -1,88 +1,147 @@
 ---
-title: "🌞 raSOL Liquid Staking Token"
-description: "Understand how liquid staking works on Solana, why raSOL matters, and the key addresses for developers."
+title: "Staked SOL yield"
 ---
 
-Staking is the backbone of Solana. By staking SOL, you help secure the network and earn rewards.\
-But in traditional staking, tokens are locked and can’t be used anywhere else. That’s where **Liquid Staking Tokens (LSTs)** come in.
+Stake your SOL. Keep it liquid. Earn yield automatically.
 
-<Info>
-  **LSTs = Staked SOL + Accumulated Rewards**\
-  They represent your staking position, growing in value over time as rewards accrue.
-</Info>
+raSOL is Hubra's liquid staking token. When you stake SOL on Hubra, you get raSOL back. This token earns staking rewards while staying usable across Solana DeFi.
 
 ---
 
-## 🔑 What Makes raSOL Unique
+## Why liquid staking?
 
-raSOL is Hubra’s native LST — originally launched as **hubSOL** — designed to be both a **yield engine** and a **power source** for the app.
+Traditional SOL staking locks your tokens. Need to sell, move funds, or react to a market drop? You wait 2-3 days to unstake.
 
-- **Stake SOL, Stay Liquid** → Earn validator rewards while keeping your tokens usable.
-- **Boosted Opportunities** → Unlock extra multipliers in Earn and Loyalty League.
-- **Stake Boost** → A share of Hubra platform fees is distributed back into raSOL, making it the first LST that accrues value beyond validator yield.
+Liquid staking fixes this. With raSOL you:
 
-<Tip>
-  raSOL isn’t just a staking token. It is the **fuel** that powers everything inside Hubra.
-</Tip>
+- Earn staking rewards (~6% APY) like native staking
+- Stay liquid: sell, swap, or use raSOL anytime
+- Skip the wait: instant unstake available
+- Use in DeFi: deposit raSOL as collateral or into yield strategies
 
----
-
-## ⚙️ How It Works
-
-1. **Deposit SOL** → Stake SOL through the Solana Stake Pool program.
-2. **Receive raSOL** → The pool mints raSOL into your wallet.
-3. **Accrue Value** → raSOL increases in value as:
-   - Validators generate staking rewards.
-   - Hubra shares platform fees back into the pool.
-4. **Stay Flexible** → Trade, lend, LP, or hold raSOL across DeFi.
-5. **Redeem Anytime** → Swap raSOL back into SOL when you want to exit.
-
-<Note>
-  By holding raSOL, you’re both **staking securely** and **capturing platform revenue** — without ever compromising self-custody.
-</Note>
+You get staking yield without giving up flexibility.
 
 ---
 
-## 💰 Why LSTs Trade Above SOL
+## How raSOL works
 
-Unlike SOL, which is a static token, LSTs like raSOL **accumulate rewards directly into their value**:
+### The exchange rate model
 
-- Each raSOL represents **1 SOL + staking rewards** earned since it was minted.
-- Over time, the **exchange rate increases** (e.g., 1 raSOL = 1.03 SOL).
-- When you redeem raSOL, you always get back **more SOL than you originally deposited**, depending on accrued rewards.
+raSOL is a reward-bearing token. When you stake SOL, you receive raSOL at the current exchange rate. As staking rewards build up, the exchange rate goes up. Each raSOL becomes worth more SOL over time.
 
-<Note>
-  This is why LSTs often appear **“more expensive”** than SOL on price charts.\
-  They don’t inflate — they **grow** as rewards compound.
-</Note>
+Your raSOL balance stays the same. Its value grows.
 
----
+- No rewards to claim (yield accrues automatically)
+- No manual compounding (it's built in)
+- Simple tracking (just watch the exchange rate)
 
-## 🛡️ Security and Audits
+### Where does the yield come from?
 
-raSOL is powered by the **Solana Stake Pool Program**, one of the most tested programs in the ecosystem:
+raSOL is staked to the Hubra validator. The validator earns staking rewards from Solana (currently ~6% APY), and those rewards flow into the raSOL exchange rate.
 
-- **Audited multiple times** by [Quantstamp](https://github.com/anza-xyz/security-audits/blob/master/spl/QuantstampStakePoolAudit-2021-10-22.pdf), [Kudelski](https://github.com/anza-xyz/security-audits/blob/master/spl/KudelskiStakePoolAudit-2021-07-07.pdf), [Neodyme](https://github.com/anza-xyz/security-audits/blob/master/spl/NeodymeStakePoolAudit-2023-11-14.pdf), [OtterSec](https://github.com/anza-xyz/security-audits/blob/master/spl/OtterSecStakePoolAudit-2023-01-20.pdf), and [Halborn](https://github.com/anza-xyz/security-audits/blob/master/spl/HalbornStakePoolAudit-2023-12-31.pdf).
-- **Battle-tested** across millions of SOL staked by other LST protocols.
-- **Non-custodial** → You hold raSOL directly in your wallet.
-- **Transparent** → Every mint and redeem is visible on-chain.
-
-<Warning>
-  Unlike custodial “wrapped staking” solutions, raSOL never leaves the Solana staking framework.
-</Warning>
+raSOL runs on [Sanctum](https://sanctum.so) infrastructure, the same system behind many of Solana's top liquid staking tokens.
 
 ---
 
-## 📦 Pool Details
+## Using raSOL in DeFi
 
-```bash
-Program:              sanctum-spl
-Mint:                 HUBsveNpjo5pWqNkH57QzxjQASdTVXcSK7bVKTSZtcSX
-Token Program:        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
-Pool:                 ECRqn7gaNASuvTyC5xfCUjehWZCSowMXstZiM5DNweyB
-Validator List:       5Aueao7mrWvL4GFswwdXmFCRw1j7AjYb8aJeMFeYv6zo
-Manager:              GRwm4EXMyVwtftQeTft7DZT3HBRxx439PrKq4oM6BwoZ
-Manager Fee Account:  2hE6xh1r41WESQZ73FXpsnw5h39GU5W2g692juJgrcY9
-Staker:               EG976hUYS3Mwf595uk9irszydggWzB3tBDobbMffyScq
-Stake Withdraw Auth:  Am87irh66UBgzkQUrw2XdUYE6r2XLFfADgmSFdZk2K4r
-```
+raSOL is a Sanctum preferred partner token with deep liquidity across Solana.
+
+- Kamino: Use raSOL as collateral for borrowing
+- Loopscale: Deposit into yield strategies
+- Save: Earn additional yield on your raSOL
+- DEXs: Swap raSOL for any token instantly
+
+### Sanctum integration
+
+raSOL plugs into Sanctum's unified liquidity layer:
+
+- Deep liquidity: swap large amounts without major slippage
+- Cross-LST swaps: convert between raSOL and other LSTs (JitoSOL, mSOL, etc.)
+- Instant unstake: powered by Sanctum's infrastructure
+
+---
+
+## Fees
+
+- Staking SOL → raSOL: Free (gasless - on Hubra)
+- Instant unstake: ~0.1-0.5% (varies with liquidity)
+- Standard unstake: Free (2-3 day wait)
+- Using raSOL in DeFi: No Hubra fee (protocol fees may apply)
+
+No management fees. No performance fees.
+
+---
+
+## Risks
+
+Liquid staking has risks. Know them before you stake.
+
+- **Smart contract risk**
+
+  raSOL relies on smart contracts. Built on audited Sanctum infrastructure, but any smart contract can have bugs. Only stake what you're comfortable exposing to DeFi.
+- **Validator risk**
+
+  raSOL stakes to the Hubra validator. If the validator has downtime or underperforms, rewards may be lower than expected. Hubra monitors performance to maintain competitive yields.
+- **Temporary depeg**
+
+  In extreme markets, raSOL might trade below its fair SOL value on DEXs. Usually temporary. You can always use instant unstake to redeem at the true exchange rate.
+- **No slashing (currently)**
+
+  Solana doesn't have validator slashing yet. If this changes, it could affect staked assets. This applies to all Solana staking, not just raSOL.
+
+---
+
+## FAQ
+
+- **What's the current APY?**
+
+  About 6% APY from Solana staking rewards. This fluctuates based on network conditions and validator performance.
+- **Is there a minimum stake amount?**
+
+  No. Stake any amount of SOL.
+- **Do I need SOL for gas fees?**
+
+  No. Hubra covers all network fees for staking and unstaking.
+- **Can I see how much yield I've earned?**
+
+  The Hubra app shows the current raSOL exchange rate. Compare it to when you staked to calculate your earnings.
+- **Where is my SOL actually staked?**
+
+  Delegated to the Hubra validator. The validator earns staking rewards from Solana, which flow into the raSOL exchange rate.
+- **Can I use raSOL outside of Hubra?**
+
+  Yes. raSOL is a standard SPL token. Use it on Kamino, Loopscale, Save, or any DEX.
+- **What if I need my SOL during a crash?**
+
+  That's the point. Instant unstake gets you SOL in seconds, or swap on any DEX. No waiting.
+- **How is raSOL different from JitoSOL or mSOL?**
+
+  Similar base yield. raSOL adds: gasless transactions on Hubra, integrated portfolio view, Sanctum preferred partner liquidity, and one-click DeFi access.
+- **What if Hubra shuts down?**
+
+  raSOL lives in your wallet. You own it regardless of Hubra. Swap on DEXs or use Sanctum directly to unstake.
+
+---
+
+## Technical details
+
+For developers and advanced users:
+
+- Token name: raSOL
+- Token standard: SPL Token
+- Mint address: `HUBsveNpjo5pWqNkH57QzxjQASdTVXcSK7bVKTSZtcSX`
+- Decimals: 9
+- Infrastructure: Sanctum Infinity
+- Validator: Hubra Validator
+
+View on Solscan: [HUBsveNpjo5pWqNkH57QzxjQASdTVXcSK7bVKTSZtcSX](https://solscan.io/token/HUBsveNpjo5pWqNkH57QzxjQASdTVXcSK7bVKTSZtcSX)
+
+---
+
+## Get started
+
+1. [Go to hubra.app/earn](https://hubra.app/earn)
+2. Connect wallet (any Solana wallet or email signup)
+3. Stake SOL, receive raSOL
+4. Watch it grow
