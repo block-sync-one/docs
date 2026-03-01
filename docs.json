@@ -58,6 +58,7 @@
             "pages": [
               "overview/earn",
               "overview/copilot",
+              "general/raSOL",
               "overview/instant-unstake",
               "overview/portfolio"
             ]
@@ -66,7 +67,6 @@
             "group": "General",
             "pages": [
               "general/github",
-              "general/raSOL",
               "general/press-kit"
             ]
           },
