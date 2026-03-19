@@ -62,12 +62,156 @@ Just ask. Horus handles routing, fees, and execution. You review and sign.
 
 ## A few things to know
 
+### Portfolio intelligence
+
+Ask about your holdings and get more than numbers:
+
+- **Allocation breakdown** showing where your money actually sits
+- **Risk flags** for concentration, volatile tokens, and liquidity concerns
+- **Performance tracking** across your positions
+- **Recent activity** and pending transactions
+
+Horus doesn't just report. It tells you what those numbers mean for your situation.
+
+> "What's my portfolio look like?"
+
+Horus shows holdings, allocation percentages, and flags that you're 60% in one token. That's concentration risk you should know about.
+
+### Token swaps
+
+Execute trades through Jupiter with full transparency:
+
+- Best route selection across all Solana DEXs
+- Price impact and fee breakdown before you sign
+- Slippage protection built in
+
+> "Swap my USDC to SOL"
+
+Horus pulls your exact balance, routes through Jupiter for best execution, and shows the estimated output before you sign anything.
+
+### Chained operations
+
+String multiple actions together in one message:
+
+> "Swap all my USDC to SOL and then stake it"
+
+Horus chains the transactions. One message, two operations.
+
+### Limit orders
+
+Set your price, walk away:
+
+> "Buy 1 SOL at $50"
+
+Creates an order that fills when the price hits your target.
+
+### DCA (Dollar-Cost Averaging)
+
+Split your entry across multiple orders:
+
+> "Put $500 into SOL over 5 daily orders"
+
+Horus sets up the schedule and executes automatically.
+
+### Staking and yield
+
+Put your tokens to work:
+
+- **SOL staking** to raSOL via Sanctum with APY comparison
+- **Instant unstake** without waiting periods
+- **Earn vaults** filtered by token, risk level, and expected returns
+- **Deposits and withdrawals** through conversation
+
+> "Stake my SOL"
+
+Horus shows you options, expected yields, and handles the delegation.
+
+### Perpetual trading
+
+For leverage exposure:
+
+- SOL, BTC, ETH futures up to 100x
+- Long and short positions
+- Clear risk info showing entry price, liquidation price, and unrealized PnL
+
+> "Open a 5x long on SOL"
+
+Horus shows you the math before you commit.
+
+### Transfers
+
+Send tokens by wallet address or saved contact:
+
+> "Send 5 SOL to mom"
+
+If mom is in your address book, done. If not, Horus asks for the address.
+
+### Price alerts
+
+Never miss a move:
+
+> "Alert me when SOL drops below $100"
+
+Horus checks every 2 minutes. Up to 10 active alerts per wallet.
+
+### Portfolio rebalancing
+
+One message to restructure your holdings:
+
+> "Rebalance to 50% SOL, 25% USDC, 25% raSOL"
+
+Horus calculates the swaps, shows routes and fees, presents a transaction card. You approve, it executes.
+
+---
+
+## Gasless transactions
+
+All transactions on Hubra are gasless. Hubra covers the network fees.
+
+No more "insufficient balance for gas" errors. 
+No more keeping SOL aside just to pay for other transactions.
+
+<Info>
+Platform fees are 0.5 to 1% on swaps. Limit orders and DCA positions have a small setup fee.
+</Info>
+
+---
+
+## Horus remembers you
+
+This isn't a stateless chatbot. Horus keeps track of:
+
+- **Your preferences** like risk tolerance, default slippage, favorite tokens
+- **Your history** and patterns from previous conversations
+- **Your goals** and context that shapes how it responds
+
+The more you use it, the better it gets at understanding what you actually want.
+
+---
+
+## Built to push back
+
+Horus has opinions and shares them.
+
+When recommending something, it shows the math. If you ask to swap $17 of stablecoins for a vault with 0.5% more APY, Horus will tell you the swap fee makes it a bad trade.
+
+A lot of AI assistants just execute whatever you ask. Horus tells you when the numbers don't work.
+
+---
+
+## Security
 <AccordionGroup>
   <Accordion title="You control everything">
     Horus builds transactions. You sign them. Your keys never leave your wallet.
   </Accordion>
+  <Accordion title="No access to private keys">
+    Your keys stay in your wallet. Horus can't move funds without your explicit approval.
+  </Accordion>
   <Accordion title="No gas fees">
     Hubra covers network fees. You don't need SOL set aside for transactions.
+  </Accordion>
+  <Accordion title="Full transparency">
+    Every transaction shows a detailed card before you sign: tokens in and out, exchange rates, fees, price impact, estimated value.
   </Accordion>
   <Accordion title="It learns you">
     Horus remembers your preferences, risk tolerance, and patterns. Gets better over time.
@@ -83,6 +227,11 @@ Just ask. Horus handles routing, fees, and execution. You review and sign.
 
 **You:** "What do I have?"
 
+It also won't:
+
+- Execute without your approval
+- Hide fees or costs
+- Recommend bad trades just because you asked
 **Horus:** Shows your holdings, allocation, and flags that you're 60% in one token.
 
 **You:** "Rebalance to 50% SOL, 30% USDC, 20% raSOL"
@@ -99,6 +248,29 @@ Three messages. Full rebalance with monitoring.
 
 ## Try it
 
+<AccordionGroup>
+  <Accordion title="Is Horus a wallet?">
+    No. It works with your existing Hubra wallet. You sign every transaction. Horus builds them, you approve.
+  </Accordion>
+
+  <Accordion title="What chains does it support?">
+    Solana only. Deep integration with Jupiter for swaps, Sanctum for staking, and Hubra's earn vaults.
+  </Accordion>
+
+  <Accordion title="How is this different from other AI assistants?">
+    Most give advice. Horus executes. It connects to real DeFi protocols and submits real transactions on your behalf.
+  </Accordion>
+
+  <Accordion title="What if something goes wrong?">
+    Horus shows a detailed transaction card before you sign. Nothing executes without your approval. If it looks wrong, don't sign.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Get started
+
+Horus is live for all Hubra users. Sign in, connect your wallet, start a conversation.
 <Card title="Launch Hubra" icon="rocket" href="https://app.hubra.app">
   Open the app and start a conversation
 </Card>

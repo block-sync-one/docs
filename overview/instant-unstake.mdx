@@ -1,9 +1,6 @@
 ---
 title: "Instant Unstake"
-description: "Get your staked SOL back immediately with instant or partial unstake"
 ---
-
-# Instant Unstake
 
 Hubra lets you unstake your SOL instantly - no waiting for epoch cooldowns. You can unstake your full balance or just a portion.
 
@@ -13,6 +10,7 @@ Hubra lets you unstake your SOL instantly - no waiting for epoch cooldowns. You 
   <Card title="Full Unstake ⚡" icon="bolt">
     Unstake your entire staked balance instantly.
   </Card>
+
   <Card title="Partial Unstake 📊" icon="chart-pie">
     Unstake any amount, keep the rest earning rewards.
   </Card>
@@ -23,6 +21,7 @@ Hubra lets you unstake your SOL instantly - no waiting for epoch cooldowns. You 
 Convert your staked SOL to liquid SOL immediately. Powered by [Sanctum](https://sanctum.so).
 
 **Steps:**
+
 1. Select your stake account
 2. Choose full or partial unstake
 3. See the output amount and fees
@@ -30,13 +29,13 @@ Convert your staked SOL to liquid SOL immediately. Powered by [Sanctum](https://
 5. SOL arrives in your wallet within seconds
 
 <Info>
-Hubra covers all network fees - you pay zero gas.
+  Hubra covers all network fees - you pay zero gas.
 </Info>
 
 ## Fees
 
 | Fee | Amount | Description |
-|-----|--------|-------------|
+| --- | --- | --- |
 | Sanctum fee | 0.1-0.5% | Liquidity provider fee (varies by pool liquidity) |
 | Hubra fee | 0.20% | Platform fee (20 bps) |
 | Network fee | ~0.000005 SOL | Covered by Hubra (gasless) |
@@ -44,7 +43,7 @@ Hubra covers all network fees - you pay zero gas.
 The exact fees are displayed before you confirm. Sanctum fee depends on available liquidity - larger unstakes may have higher price impact.
 
 <Warning>
-If price impact exceeds 5%, you'll see a warning. Consider unstaking in smaller portions for large amounts.
+  If price impact exceeds 5%, you'll see a warning. Consider unstaking in smaller portions for large amounts.
 </Warning>
 
 ## Partial unstake
@@ -63,11 +62,11 @@ Unstake any amount - you don't have to unstake everything at once.
 ### Additional fees for partial unstake
 
 | Fee | Amount | Notes |
-|-----|--------|-------|
+| --- | --- | --- |
 | Account rent | ~0.002 SOL | One-time fee for creating split account |
 
 <Info>
-Minimum unstake amount: 0.01 SOL
+  Minimum unstake amount: 0.01 SOL
 </Info>
 
 ## FAQ
@@ -76,15 +75,15 @@ Minimum unstake amount: 0.01 SOL
   <Accordion title="Why is the output less than my staked amount?">
     Instant unstake uses Sanctum's liquidity pools to swap your stake for SOL immediately. Fees include: Sanctum liquidity fee (0.1-0.5%) plus Hubra platform fee (0.20%). You'll see the exact amounts before confirming.
   </Accordion>
-  
+
   <Accordion title="Is there a minimum unstake amount?">
     Yes, 0.01 SOL minimum. For partial unstakes, the remaining balance must cover rent exemption (~0.002 SOL).
   </Accordion>
-  
+
   <Accordion title="Can I unstake large amounts?">
-    Yes, but for very large amounts (1000+ SOL), consider unstaking in portions to minimize price impact from the liquidity pool.
+    Yes, but for very large amounts (1000\+ SOL), consider unstaking in portions to minimize price impact from the liquidity pool.
   </Accordion>
-  
+
   <Accordion title="How fast is instant unstake?">
     SOL arrives in your wallet within seconds of confirming the transaction.
   </Accordion>
