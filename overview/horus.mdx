@@ -1,99 +1,224 @@
 ---
 title: "Horus"
-description: "Your AI financial copilot. Manage your Solana portfolio through conversation—just tell Horus what you want."
+description: "Your AI financial agent. Manage your Solana DeFi portfolio through conversation. Horus executes, not just advises."
 ---
 
-# Horus — Your AI Financial Copilot
+# Horus
 
-Horus is your way to manage crypto on Solana through conversation. Tell it what you want, it figures out the how.
+Most DeFi tools give you dashboards. Horus gives you a conversation.
 
----
-
-## What is Horus?
-
-Horus lives inside your Hubra wallet. Instead of clicking through menus and hunting for the right button, you just talk to it.
-
-**Example:**
-> "What do I have in my wallet?"
-
-Horus shows you what you own, how it's split across tokens, and flags anything that looks off—like 80% of your money sitting in one volatile asset.
+Horus is the AI inside Hubra that manages your Solana portfolio through natural language. It doesn't just tell you what to do. It actually executes trades, stakes tokens, and monitors your positions. You talk, Horus acts.
 
 ---
 
-## What can Horus do?
+## Why Horus exists
 
-### Check your portfolio
-Ask about your holdings. Horus shows you what you have, what it's worth today, and how your allocation looks.
+DeFi has a UX problem. Dashboards with 47 numbers you don't understand. Swap interfaces asking about slippage when you just want to buy SOL. Yield opportunities that looked great until you calculated the gas fees.
 
-### Swap tokens
-Want to trade?
-> "Swap my USDC to SOL"
+Most DeFi tools assume you already know what you're doing. They hand you power but demand expertise in return.
 
-Horus finds the best route, shows you what you'll get, and waits for your approval.
-
-### Stake and earn
-> "Stake my SOL"
-
-Horus picks the best option and shows you expected returns before you commit.
-
-### Set alerts
-> "Let me know when SOL hits $150"
-
-Horus checks every few minutes and pings you when it happens. Up to 10 alerts active at once.
-
-### Send tokens
-> "Send 10 USDC to Alex"
-
-If Alex is in your contacts, done. If not, Horus asks for the address.
+Horus closes that gap. You set the intent. Horus handles execution.
 
 ---
 
 ## How it works
 
 <Steps>
-  <Step title="You type what you want">
-    Normal language, no special syntax
+  <Step title="You ask in plain English">
+    "Swap half my USDC to SOL" or "What's the best yield for my stables?"
   </Step>
-  <Step title="Horus figures it out">
-    Checks your balance, finds the best route, builds the transaction
+  <Step title="Horus does the work">
+    Checks your balance, finds the best route, calculates costs, builds the transaction
   </Step>
-  <Step title="You approve">
-    Look at the details, sign if it looks right
+  <Step title="You review and sign">
+    See exactly what's happening. Tokens in, tokens out, fees, price impact. Then approve.
   </Step>
 </Steps>
 
-Nothing moves without your signature.
+No hunting through menus. No remembering which DEX has better rates today. No manual slippage math.
 
 ---
 
-## A few things to know
+## Capabilities
+
+### Portfolio intelligence
+
+Ask about your holdings and get more than numbers:
+
+- **Allocation breakdown** showing where your money actually sits
+- **Risk flags** for concentration, volatile tokens, and liquidity concerns
+- **Performance tracking** across your positions
+- **Recent activity** and pending transactions
+
+Horus doesn't just report. It tells you what those numbers mean for your situation.
+
+> "What's my portfolio look like?"
+
+Horus shows holdings, allocation percentages, and flags that you're 60% in one token. That's concentration risk you should know about.
+
+### Token swaps
+
+Execute trades through Jupiter with full transparency:
+
+- Best route selection across all Solana DEXs
+- Price impact and fee breakdown before you sign
+- Slippage protection built in
+
+> "Swap my USDC to SOL"
+
+Horus pulls your exact balance, routes through Jupiter for best execution, and shows the estimated output before you sign anything.
+
+### Chained operations
+
+String multiple actions together in one message:
+
+> "Swap all my USDC to SOL and then stake it"
+
+Horus chains the transactions. One message, two operations.
+
+### Limit orders
+
+Set your price, walk away:
+
+> "Buy 1 SOL at $50"
+
+Creates an order that fills when the price hits your target.
+
+### DCA (Dollar-Cost Averaging)
+
+Split your entry across multiple orders:
+
+> "Put $500 into SOL over 5 daily orders"
+
+Horus sets up the schedule and executes automatically.
+
+### Staking and yield
+
+Put your tokens to work:
+
+- **SOL staking** to raSOL via Sanctum with APY comparison
+- **Instant unstake** without waiting periods
+- **Earn vaults** filtered by token, risk level, and expected returns
+- **Deposits and withdrawals** through conversation
+
+> "Stake my SOL"
+
+Horus shows you options, expected yields, and handles the delegation.
+
+### Perpetual trading
+
+For leverage exposure:
+
+- SOL, BTC, ETH futures up to 100x
+- Long and short positions
+- Clear risk info showing entry price, liquidation price, and unrealized PnL
+
+> "Open a 5x long on SOL"
+
+Horus shows you the math before you commit.
+
+### Transfers
+
+Send tokens by wallet address or saved contact:
+
+> "Send 5 SOL to mom"
+
+If mom is in your address book, done. If not, Horus asks for the address.
+
+### Price alerts
+
+Never miss a move:
+
+> "Alert me when SOL drops below $100"
+
+Horus checks every 2 minutes. Up to 10 active alerts per wallet.
+
+### Portfolio rebalancing
+
+One message to restructure your holdings:
+
+> "Rebalance to 50% SOL, 25% USDC, 25% raSOL"
+
+Horus calculates the swaps, shows routes and fees, presents a transaction card. You approve, it executes.
+
+---
+
+## Gasless transactions
+
+All transactions on Hubra are gasless. Hubra covers the network fees.
+
+No more "insufficient balance for gas" errors. No more keeping SOL aside just to pay for other transactions.
+
+<Info>
+Platform fees are 0.5 to 1% on swaps. Limit orders and DCA positions have a small setup fee.
+</Info>
+
+---
+
+## Horus remembers you
+
+This isn't a stateless chatbot. Horus keeps track of:
+
+- **Your preferences** like risk tolerance, default slippage, favorite tokens
+- **Your history** and patterns from previous conversations
+- **Your goals** and context that shapes how it responds
+
+The more you use it, the better it gets at understanding what you actually want.
+
+---
+
+## Built to push back
+
+Horus has opinions and shares them.
+
+When recommending something, it shows the math. If you ask to swap $17 of stablecoins for a vault with 0.5% more APY, Horus will tell you the swap fee makes it a bad trade.
+
+A lot of AI assistants just execute whatever you ask. Horus tells you when the numbers don't work.
+
+---
+
+## Security
 
 <AccordionGroup>
-  <Accordion title="You approve everything">
-    Horus can't move your money without you signing. Every transaction shows you exactly what's happening first.
+  <Accordion title="You sign everything">
+    Horus builds transactions. You approve them. Nothing moves without your signature.
   </Accordion>
-  <Accordion title="No gas fees">
-    Hubra covers network fees. You don't need to keep SOL around just to pay for transactions.
+  <Accordion title="No access to private keys">
+    Your keys stay in your wallet. Horus can't move funds without your explicit approval.
   </Accordion>
-  <Accordion title="It learns your preferences">
-    The more you chat with Horus, the better it gets at understanding what you want. It remembers your risk tolerance, your favorite tokens, your patterns.
-  </Accordion>
-  <Accordion title="It tells you when something's a bad idea">
-    If the math doesn't work—like swapping $17 for a vault with 0.5% better yield when fees eat more than that—Horus will say so.
+  <Accordion title="Full transparency">
+    Every transaction shows a detailed card before you sign: tokens in and out, exchange rates, fees, price impact, estimated value.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Getting started
+## What Horus doesn't do
 
-Horus is available to all Hubra users. Sign in, connect your wallet, start typing.
+Horus is focused on crypto and DeFi. Ask about the weather and it'll politely redirect you.
 
-You get **20 free credits** to explore everything. Checking balances and prices is free. Actions like swaps cost a few credits.
+It also won't:
+- Execute without your approval
+- Hide fees or costs
+- Recommend bad trades just because you asked
 
-<Card title="Launch Hubra" icon="rocket" href="https://app.hubra.app">
-  Open the app and say hi to Horus
-</Card>
+---
+
+## Example session
+
+**You**: "What's my portfolio look like?"
+
+**Horus**: Shows holdings, allocation percentages, and flags that you're 60% in one token.
+
+**You**: "Rebalance to 50% SOL, 25% USDC, 25% raSOL"
+
+**Horus**: Calculates the swaps, shows routes and fees, presents a transaction card. You approve, it executes.
+
+**You**: "Set an alert if SOL drops 10% from here"
+
+**Horus**: Done. Notification when it triggers.
+
+Three messages. Full rebalance with monitoring. No dashboard required.
 
 ---
 
@@ -101,15 +226,25 @@ You get **20 free credits** to explore everything. Checking balances and prices 
 
 <AccordionGroup>
   <Accordion title="Is Horus a wallet?">
-    No. It works with your Hubra wallet. Think of it as the brain, not the vault.
+    No. It works with your existing Hubra wallet. You sign every transaction. Horus builds them, you approve.
   </Accordion>
-  <Accordion title="Can Horus access my keys?">
-    No. Your keys stay secure. Horus builds transactions; you sign them.
+  <Accordion title="What chains does it support?">
+    Solana only. Deep integration with Jupiter for swaps, Sanctum for staking, and Hubra's earn vaults.
   </Accordion>
-  <Accordion title="What if I mess up?">
-    Horus shows you exactly what will happen before you sign. If something looks wrong, don't approve it.
+  <Accordion title="How is this different from other AI assistants?">
+    Most give advice. Horus executes. It connects to real DeFi protocols and submits real transactions on your behalf.
   </Accordion>
-  <Accordion title="Can I ask Horus about non-crypto stuff?">
-    It'll politely redirect you. Horus only does crypto.
+  <Accordion title="What if something goes wrong?">
+    Horus shows a detailed transaction card before you sign. Nothing executes without your approval. If it looks wrong, don't sign.
   </Accordion>
 </AccordionGroup>
+
+---
+
+## Get started
+
+Horus is live for all Hubra users. Sign in, connect your wallet, start a conversation.
+
+<Card title="Launch Hubra" icon="rocket" href="https://app.hubra.app">
+  Open the app and meet Horus
+</Card>
