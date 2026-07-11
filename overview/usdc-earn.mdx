@@ -247,15 +247,15 @@ Verify the fee config on-chain via `fetchUsdcVaultStats()` (`/vault/{vault}/feeC
 
 ---
 
-## raUSDC: do not touch outside Hubra
+## raUSDC: safe to move, never burn
 
 <Warning>
-  raUSDC is **not** designed for cross-protocol composability. Do not transfer, swap, or burn raUSDC outside the Hubra app.
+  **Do not burn your raUSDC.** Burning it permanently forfeits access to your position. Transferring and trading the token are safe; only burning is irreversible.
 </Warning>
 
-Unlike raSOL (which is a Sanctum preferred-partner LST with deep liquidity across Solana DeFi), raUSDC is a vault-specific receipt. Withdraws happen by burning raUSDC inside the vault; trading raUSDC on a DEX is not supported and will result in loss of access to the position.
+raUSDC is a standard SPL token, so you can hold, transfer, or trade it, and the claim on your vault position moves with it. It is not yet integrated into external DeFi protocols. Withdraws happen by redeeming raUSDC inside the vault, which converts it back to USDC at the current rate.
 
-If you connect an external wallet (Phantom, Backpack, Solflare) and deposit into Earn, raUSDC will appear in that wallet. Treat it as "do not touch."
+If you connect an external wallet (Phantom, Backpack, Solflare) and deposit into Earn, raUSDC appears in that wallet. To redeem it for USDC, use the Hubra app.
 
 For the full token reference, see [raUSDC](/general/raUSDC).
 
