@@ -33,12 +33,12 @@
         {
           "anchor": "App",
           "icon": "rocket",
-          "href": "https://hubra.app/s"
+          "href": "https://hubra.app/c"
         },
         {
-          "anchor": "Discord",
-          "icon": "discord",
-          "href": "https://discord.hubra.app"
+          "anchor": "Telegram",
+          "icon": "telegram",
+          "href": "https://t.me/hubraapp"
         },
         {
           "anchor": "X",
